@@ -6,7 +6,7 @@ import Cat from '../../assets/img/cat.jpg';
 
 // Import Swiper styles
 import 'swiper/css';
-import { SwiperStyled, Image} from './style';
+import { SwiperStyled, Image, Slide} from './style';
 
 SwiperCore.use([Keyboard]);
 
@@ -26,7 +26,9 @@ const Slider = () =>  (
     onSwiper={(swiper) => console.log(swiper)}
   >
     {images.map((item, key) => <SwiperSlide key={key}>
+      <Slide>
       <Image src={item} />
+      </Slide>
       </SwiperSlide>
       )}
   </SwiperStyled>
