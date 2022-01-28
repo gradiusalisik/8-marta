@@ -62,6 +62,10 @@ export const LogoName = styled.img`
   @media screen and (max-height: 900px) {
     height: 140px;
   }
+
+  @media screen and (max-height: 700px) {
+    height: 100px;
+  }
 `
 
 export const Content = styled.div`
@@ -78,6 +82,11 @@ export const Text = styled.p`
   @media screen and (max-height: 900px) {
     font-size: 20px;
     line-height: 40px;
+  }
+
+  @media screen and (max-height: 700px) {
+    font-size: 18px;
+    line-height: 36px;
   }
 
   @media screen and (max-width: 1200px) {
@@ -98,6 +107,9 @@ export const MaskotImg = styled.img`
   @media screen and (max-height: 900px) {
     width: 300px;
   }
+  @media screen and (max-height: 700px) {
+    width: 200px;
+  }
 `
 
 export const SlideEnd = styled.div`
@@ -107,6 +119,13 @@ export const SlideEnd = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  @media screen and (max-height: 900px) {
+    padding: 50px;
+  }
+  @media screen and (max-height: 700px) {
+    padding: 20px;
+  }
 `
 
 export const LogoShort = styled.img`
@@ -116,6 +135,8 @@ export const LogoShort = styled.img`
 `
 
 export const Title = styled.h1`
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 84px;
   line-height: 100px;
   color: white;
